@@ -10,26 +10,41 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
 
-            <div class="item active">
-            <img src="img/kolekcja_01.jpg" alt="KOLEKCJA 1">
+
+<div class="item active">
+    <a href="collection.php?id=1">
+            <img src="img/collections/1/a.jpg" />
                 <div class="carousel-caption">
                     <h1>KOLEKCJA</h1>
                     </div>
+                    </a>
                 </div>
 
-            <div class="item">
-            <img src="img/kolekcja_02.jpg" alt="KOLEKCJA 2">
-                <div class="carousel-caption">
-                    <h1>KOLEKCJA</h1>
-                    </div>
-                </div>
+
+<?php
+      include 'php/connection.php';
+      $strSQL = "SELECT * FROM collection WHERE NOT id='1'";
+	  $rs = mysql_query($strSQL);
+	  while($row = mysql_fetch_array($rs)) {
+    
+        echo '
 
             <div class="item">
-            <img src="img/kolekcja_03.jpg" alt="KOLEKCJA 3">
-                <div class="carousel-caption">
-                    <h1>KOLEKCJA</h1>
-                    </div>
-                </div>
+            <a href="collection.php?id='.$row['id'].'">
+                    <img src="img/collections/'.$row['id'].'/a.jpg" />
+                        <div class="carousel-caption">
+                            <h1>KOLEKCJA</h1>
+                            </div>
+                            </a>
+                        </div>
+        ';
+    }
+    	mysql_close();
+?>
+
+
+
+
 
         </div>
 

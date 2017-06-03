@@ -10,12 +10,14 @@
 <body>
 
 <?php include 'fragments/header.html';?>
+
 <?php include 'fragments/c1.php';?>
-<?php include 'fragments/c2.php';?>
+<?php include 'fragments/collectionload.php';?>
 <?php include 'fragments/footer.html';?>
 <?php include 'fragments/modal.html';?>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
     <script src="js/bootstrap.min.js"></script>
     <script src="slick/slick.min.js"></script>
     <script src="js/slickconfig.js"></script>

@@ -11,7 +11,7 @@
 
 <?php include 'fragments/header.html';?>
 <?php include 'fragments/c1.html';?>
-<?php include 'fragments/c2.html';?>
+<?php include 'fragments/c2.php';?>
 <?php include 'fragments/footer.html';?>
 <?php include 'fragments/modal.html';?>
 

@@ -1,9 +1,14 @@
-
+<br><br>
 <div class="row">
-        <div class="col-xs-12 col-md-12 centerTextAlign footerFont1"><br><p>PRODUKTY</p><br></div>
+        <div class="lineBackgroundColor">
+        </div>
     </div>
 
-<div class="car marginTopBottom marginSlick"> 
+<div class="row">
+        <div class="col-xs-12 col-md-12 centerTextAlign productsTitle"><br><br><h1><strong>PRODUKTY</strong></h1><br></div>
+    </div>
+
+<div class="car marginTopBottom marginSlick" id="scrollProduct"> 
 
 <?php
   include 'php/connection.php';
@@ -14,9 +19,10 @@
     echo '
     <div class="col-sm-6 col-md-4 ">
       <div class="thumbnail">
-        <a href="product.php?id='.$row['id'].'"><img src="img/products/'.$row['id'].'/a.jpg" /></a>
+        <a href="product.php?id='.$row['id'].'"><img src="img/products/'.$row['id'].'/thumb/thumb.jpg" /></a>
       <div class="caption centerTextAlign">
-        <h3>'.$row['product_name'].'</h3> 
+        <h3>'.$row['product_name'].'</h3>
+        <h4><strong>Cena: '.$row['product_price'].' zł</strong></h4>
           </div>
         </div>
      </div>

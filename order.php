@@ -10,23 +10,20 @@
 <body>
 
 <?php include 'fragments/header.html';?>
-
-<?php include 'fragments/c1.php';?>
-<?php include 'fragments/collectionload.php';?>
+<br>
+<div class="centerTextAlign"><h1>REALIZACJA ZAMÓWIENIA</h1></div>
+<br>
+<div><h2>W celu złożenia zamówienia skontaktuj sie z nami telefonicznie lub mailowo. Po ostatecznym potwierdzeniu zamówienia termin
+jego realizacji wynosi od 10 - 20 dni roboczych i jest on ustalany indywidualnie z tobą. Wszystkie zamówienia realizujemy 
+we współpracy z doświadczoną firmą transportową wedłóg jej cennika i terminu dostaw.</h2></div>
+<br><br><br>
+<?php include 'fragments/c2.php';?>
 <?php include 'fragments/footer.html';?>
 <?php include 'fragments/modal.html';?>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
     <script src="js/bootstrap.min.js"></script>
     <script src="slick/slick.min.js"></script>
     <script src="js/slickconfig.js"></script>
-    <script>
-        $(function() { // when the DOM is ready...
-            //  Move the window's scrollTop to the offset position of #now
-            $(window).scrollTop($('#scrollCollection').offset().top);
-        });
-    </script>
-
 </body>
 </html>

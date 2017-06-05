@@ -1,6 +1,6 @@
 $('.car').slick({
   accessibility: true,
-  dots: true,
+  dots: false,
   infinite: true,
   slidesToShow: 3,
   slidesToScroll: 3,
@@ -11,7 +11,7 @@ $('.car').slick({
         slidesToShow: 3,
         slidesToScroll: 3,
         infinite: true,
-        dots: true
+        dots: false
       }
     },
     {

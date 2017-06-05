@@ -1,4 +1,6 @@
+
 <div class="row marginTopBottom">
+    
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
         <ol class="carousel-indicators">
@@ -10,16 +12,14 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
 
+<div class="overlay">KOLEKCJE</div>
 
 <div class="item active">
     <a href="collection.php?id=1">
             <img src="img/collections/1/a.jpg" />
-                <div class="carousel-caption">
-                    <h1>KOLEKCJA</h1>
-                    </div>
+                
                     </a>
                 </div>
-
 
 <?php
       include 'php/connection.php';
@@ -32,9 +32,7 @@
             <div class="item">
             <a href="collection.php?id='.$row['id'].'">
                     <img src="img/collections/'.$row['id'].'/a.jpg" />
-                        <div class="carousel-caption">
-                            <h1>KOLEKCJA</h1>
-                            </div>
+                        
                             </a>
                         </div>
         ';
@@ -42,12 +40,7 @@
     	mysql_close();
 ?>
 
-
-
-
-
         </div>
-
         <!-- Left and right controls -->
                 <a class="left carousel-control" href="#myCarousel" data-slide="prev">
                     <span class="glyphicon glyphicon-chevron-left"></span>
@@ -57,5 +50,5 @@
                     <span class="glyphicon glyphicon-chevron-right"></span>
                     <span class="sr-only">Next</span>
                 </a>
-    </div>
+    </div>                       
 </div>

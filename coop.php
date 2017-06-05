@@ -10,23 +10,17 @@
 <body>
 
 <?php include 'fragments/header.html';?>
-
-<?php include 'fragments/c1.php';?>
-<?php include 'fragments/collectionload.php';?>
+<br><br>
+<div><h2>Choć nasza oferta skierowana jest głównie do indywidualnych odbiorców to realizujemy rownież hurtowe zamówienia dla firm.
+Po prostu zadzwoń do nas lub napisz i ustalimy wszystkie szczegóły Twojego zamówienia.</h2></div>
+<br><br><br>
+<?php include 'fragments/c2.php';?>
 <?php include 'fragments/footer.html';?>
 <?php include 'fragments/modal.html';?>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
     <script src="js/bootstrap.min.js"></script>
     <script src="slick/slick.min.js"></script>
     <script src="js/slickconfig.js"></script>
-    <script>
-        $(function() { // when the DOM is ready...
-            //  Move the window's scrollTop to the offset position of #now
-            $(window).scrollTop($('#scrollCollection').offset().top);
-        });
-    </script>
-
 </body>
 </html>

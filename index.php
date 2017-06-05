@@ -5,7 +5,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="slick/slick.css" rel="stylesheet" type="text/css" />
     <link href="slick/slick-theme.css" rel="stylesheet" type="text/css"/>
-    <link href="css/main.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 

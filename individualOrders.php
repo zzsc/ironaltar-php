@@ -10,23 +10,22 @@
 <body>
 
 <?php include 'fragments/header.html';?>
-
-<?php include 'fragments/c1.php';?>
-<?php include 'fragments/collectionload.php';?>
+<br>
+<div class="centerTextAlign"><h1>INDYWIDUALNE PROJEKTY</h1></div>
+<br>
+<div><h2>Jeżeli zainteresuje Cię nasz produkt ale chciałbys coś w nim zmienić to oferujemy Ci taką możliwość. Możesz zmienic wymiary 
+produktu oraz jego kolor. Możesz zmienić rodzaj i kolor wykorzystanego drewna jak rownież możesz coś dodać ale i coś usunąć 
+z projektu. Oczywiście wszystkie zmiany mają swoje uwarunkowania. Poza dodaniem nowych elementow i zmiana rodzaju 
+wykorzystanego drewna , reszta zmian nie wymaga dodatkowego nakładu finansowego. Dodatkowe koszty ustalane są 
+indywidualnie do każdego zmienionego produktu.</h2></div>
+<br><br><br>
+<?php include 'fragments/c2.php';?>
 <?php include 'fragments/footer.html';?>
 <?php include 'fragments/modal.html';?>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
     <script src="js/bootstrap.min.js"></script>
     <script src="slick/slick.min.js"></script>
     <script src="js/slickconfig.js"></script>
-    <script>
-        $(function() { // when the DOM is ready...
-            //  Move the window's scrollTop to the offset position of #now
-            $(window).scrollTop($('#scrollCollection').offset().top);
-        });
-    </script>
-
 </body>
 </html>

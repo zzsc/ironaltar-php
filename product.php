@@ -21,5 +21,11 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="slick/slick.min.js"></script>
     <script src="js/slickconfig.js"></script>
+    <script>
+        $(function() { // when the DOM is ready...
+            //  Move the window's scrollTop to the offset position of #now
+            $(window).scrollTop($('#scrollProduct').offset().top);
+        });
+    </script>
 </body>
 </html>

@@ -11,22 +11,32 @@
 
 <?php include 'fragments/header.html';?>
 
-<?php include 'fragments/c1.php';?>
-<?php include 'fragments/collectionload.php';?>
+
+
+<div class="row footer jumbotron marginTopBottom font"> 
+ 
+        <div class="col-xs-12 col-sm-4 col-md-4 footerFont1 centerTextAlign">
+            <img src="img/dostawa.png">
+            Dostawa i transport
+            </div>
+
+            
+        <div class="col-xs-12 col-sm-8 col-md-8 textFont">
+           <h2> Wszystkie zamówienia wysyłamy firmą transportową DPD. Termin dostawy wynosi od 2-4 dni roboczych.
+                Do każdego klienta wysyłamy indywidualny numer  jego paczki. Dzięki temu możesz śledzić swoją przesyłkę 
+                w internecie na stronie firmy DPD.
+                <br>
+                Koszty dostawy ;</h2>           
+        </div>
+
+</div>
+
 <?php include 'fragments/footer.html';?>
 <?php include 'fragments/modal.html';?>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
     <script src="js/bootstrap.min.js"></script>
     <script src="slick/slick.min.js"></script>
     <script src="js/slickconfig.js"></script>
-    <script>
-        $(function() { // when the DOM is ready...
-            //  Move the window's scrollTop to the offset position of #now
-            $(window).scrollTop($('#scrollCollection').offset().top);
-        });
-    </script>
-
 </body>
 </html>

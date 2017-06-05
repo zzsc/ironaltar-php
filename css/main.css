@@ -3,14 +3,27 @@
   src: url('fonts/Roboto-Light.eot');
   src: url('fonts/Roboto-Light.eot?#iefix') format('embedded-opentype'), url('fonts/Roboto-Light.woff') format('woff'), url('fonts/Roboto-Light.ttf') format('truetype');
 }
-.mainContainer {
-  background: white;
+.container-fluid {
+  max-width: 1180px;
+  font-family: 'robo', 'Arial Narrow';
 }
-.font {
-  font-family: "robo";
+.body {
+  background: white;
 }
 .centerTextAlign {
   text-align: center;
+}
+.rightTextAlign {
+  text-align: right;
+}
+.leftTextAlign {
+  text-align: left;
+}
+.marginTop10 {
+  margin-top: 10px;
+}
+.marginBottom10 {
+  margin-bottom: 10px;
 }
 .marginTopBottom {
   margin-top: 40px;
@@ -21,12 +34,12 @@
   padding-right: 40px;
 }
 .marginSlick {
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .lineBackgroundColor {
   background-color: #f1f1f1;
-  height: 5px;
+  height: 3px;
 }
 .lineTwoBackgroundColor {
   background-color: grey;
@@ -34,24 +47,29 @@
 }
 .navbar {
   margin-bottom: 0;
-  font-size: 1.5vw;
+  font-size: 18px;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .navbar-default {
   background-color: white;
   border-color: white;
 }
+.productsTitle {
+  color: grey;
+}
 .footer {
   background-color: #f1f1f1;
 }
 .footerFont1 {
-  font-size: 2.2vw;
+  font-size: 18px;
   font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
 }
-.footerFont1 p {
-  font-size: 2vw;
-}
-.footerFont1 d {
-  font-size: 1vw;
+.textFont {
+  font-size: 18px;
+  font-weight: bold;
 }
 .btn-circle {
   width: 30px;
@@ -78,26 +96,85 @@
   line-height: 1.33;
   border-radius: 35px;
 }
-@media screen and (min-width: 768px) {
+.overlay {
+  color: #fff;
+  position: absolute;
+  z-index: 12;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background: grey;
+  font-size: 34px;
+  font-family: 'robo', 'Arial Narrow';
+}
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  width: 100%;
+  /* use this, or not */
+  margin: auto;
+}
+.slick-slide {
+  height: auto;
+}
+.slick-prev:before,
+.slick-next:before {
+  font-family: "Glyphicons Halflings", "slick", sans-serif;
+  font-size: 20px;
+  color: grey;
+}
+.slick-prev:before {
+  content: "\e257";
+}
+.slick-next:before {
+  content: "\e258";
+}
+@media screen and (min-width: 767px) {
   #exampleModal .modal-dialog {
     width: 75%;
   }
 }
-/* to powoduje, że po zejściu poniżej 767px czcionka dostaje rozmiar 18px na stałe -
-cel tego taki, że na telefonie zmieniszyła by się bez tego do za małej, nie czytelnej
- */
-@media (max-width: 767px) {
-  .navbar {
-    font-size: 18px;
+/* Large desktop 
+@media (min-width: 1200px) { ... }
+*/
+@media (min-width: 979px) {
+  .navbar-brand {
+    display: none;
   }
+  #numberMobile {
+    display: none;
+  }
+  #logotypnologo {
+    display: none;
+  }
+}
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  .navbar-brand {
+    display: none;
+  }
+  #numberMobile {
+    display: none;
+  }
+  #logotypnologo {
+    display: none;
+  }
+  .footerFont1 {
+    font-size: 10px;
+    font-weight: bold;
+  }
+  .navbar {
+    margin-bottom: 0;
+    font-size: 13px;
+  }
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
   .footerFont1 {
     font-size: 24px;
     font-weight: bold;
-    text-align: center;
-  }
-  .footerFont1 d {
-    font-size: 24px;
-    font-weight: bold;
+    text-align: left;
+    margin-left: 50px;
   }
   #banner {
     display: none;
@@ -111,32 +188,10 @@ cel tego taki, że na telefonie zmieniszyła by się bez tego do za małej, nie 
   #doubleLine {
     display: none;
   }
-}
-@media (min-width: 767px) {
-  .navbar-brand {
-    display: none;
-  }
-  #numberMobile {
-    display: none;
-  }
-  #logotypnologo {
-    display: none;
+  .overlay {
+    font-size: 15px;
   }
 }
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
-  width: 100%;
-  /* use this, or not */
-  margin: auto;
-}
-.carousel-caption {
-  top: 0;
-  bottom: auto;
-}
-.slick-slide {
-  height: auto;
-}
-.slick-prev:before,
-.slick-next:before {
-  color: grey;
-}
+/* Landscape phones and down 
+@media (max-width: 480px) { ... }
+*/

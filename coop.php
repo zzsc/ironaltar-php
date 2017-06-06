@@ -11,8 +11,8 @@
 
 <?php include 'fragments/header.html';?>
 <br><br>
-<div><h2>Choć nasza oferta skierowana jest głównie do indywidualnych odbiorców to realizujemy rownież hurtowe zamówienia dla firm.
-Po prostu zadzwoń do nas lub napisz i ustalimy wszystkie szczegóły Twojego zamówienia.</h2></div>
+<div class="texts">Choć nasza oferta skierowana jest głównie do indywidualnych odbiorców to realizujemy rownież hurtowe zamówienia dla firm.
+Po prostu zadzwoń do nas lub napisz i ustalimy wszystkie szczegóły Twojego zamówienia.</div>
 <br><br><br>
 <?php include 'fragments/c2.php';?>
 <?php include 'fragments/footer.html';?>

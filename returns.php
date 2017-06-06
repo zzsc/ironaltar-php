@@ -20,10 +20,10 @@
             </div>
 
             
-        <div class="col-xs-12 col-sm-8 col-md-8 textFont">
-           <div class="centerTextAlign"><h1>Proces postępowania przy uszkodzeniach towaru podczas transportu.</h1></div>
+        <div class="col-xs-12 col-sm-8 col-md-8 ">
+           <div class="centerTextAlign title">Proces postępowania przy uszkodzeniach towaru podczas transportu.</div>
 
-           <div><h2>
+           <div class="texts">
 a) Podczas odbioru towaru od kuriera przesyłka musi być każdorazowo sprawdzana przez osobę przyjmującą
 daną dostawę pod względem uszkodzeń mechanicznych. 
 Przesyłka powinna posiadać wszystkie zabezpieczenia i oznaczenia ostrzegawcze.
@@ -78,7 +78,7 @@ wynikających z uszkodzeń/rozbieźności podczas transportu.<br>
 i) Jeżeli odbiorca otrzymał wadliwy towar z winy prducenta powinien zgłosić ten fakt do firmy Iron Altar a następnie 
 postępować według wskazań pracownika fimy przyjmującego zgłoszenie reklamacyjne.<br>
 <br><br>
-</h2></div> 
+</div> 
 
            
         </div>

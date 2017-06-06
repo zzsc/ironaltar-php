@@ -5,7 +5,7 @@
     </div>
 
 <div class="row">
-        <div class="col-xs-12 col-md-12 centerTextAlign productsTitle"><br><br><h1><strong>PRODUKTY</strong></h1><br></div>
+        <div class="col-xs-12 col-md-12 centerTextAlign productsTitle"><br><br><h1>PRODUKTY</h1><br></div>
     </div>
 
 <div class="car marginTopBottom marginSlick" id="scrollProduct"> 
@@ -19,8 +19,8 @@
     echo '
     <div class="col-sm-6 col-md-4 ">
       <div class="thumbnail">
-        <a href="product.php?id='.$row['id'].'"><img src="img/products/'.$row['id'].'/thumb/thumb.jpg" /></a>
-      <div class="caption centerTextAlign">
+        <div class="caption thumbnailImg"><a href="product.php?id='.$row['id'].'"><img src="img/products/'.$row['id'].'/thumb/thumb.jpg" /></a></div>
+      <div class="caption textProductThumbnail">
         <h3>'.$row['product_name'].'</h3>
         <h4><strong>Cena: '.$row['product_price'].' zł</strong></h4>
           </div>

@@ -21,12 +21,12 @@
             </div>
 
             
-        <div class="col-xs-12 col-sm-8 col-md-8 textFont">
-           <h2> Wszystkie zamówienia wysyłamy firmą transportową DPD. Termin dostawy wynosi od 2-4 dni roboczych.
+        <div class="col-xs-12 col-sm-8 col-md-8 texts">
+            Wszystkie zamówienia wysyłamy firmą transportową DPD. Termin dostawy wynosi od 2-4 dni roboczych.
                 Do każdego klienta wysyłamy indywidualny numer  jego paczki. Dzięki temu możesz śledzić swoją przesyłkę 
                 w internecie na stronie firmy DPD.
                 <br>
-                Koszty dostawy ;</h2>           
+                Koszty dostawy ;           
         </div>
 
 </div>

@@ -11,11 +11,11 @@
 
 <?php include 'fragments/header.html';?>
 <br>
-<div class="centerTextAlign"><h1>REALIZACJA ZAMÓWIENIA</h1></div>
+<div class="centerTextAlign title">REALIZACJA ZAMÓWIENIA</div>
 <br>
-<div><h2>W celu złożenia zamówienia skontaktuj sie z nami telefonicznie lub mailowo. Po ostatecznym potwierdzeniu zamówienia termin
+<div class="texts">W celu złożenia zamówienia skontaktuj sie z nami telefonicznie lub mailowo. Po ostatecznym potwierdzeniu zamówienia termin
 jego realizacji wynosi od 10 - 20 dni roboczych i jest on ustalany indywidualnie z tobą. Wszystkie zamówienia realizujemy 
-we współpracy z doświadczoną firmą transportową wedłóg jej cennika i terminu dostaw.</h2></div>
+we współpracy z doświadczoną firmą transportową wedłóg jej cennika i terminu dostaw.</div>
 <br><br><br>
 <?php include 'fragments/c2.php';?>
 <?php include 'fragments/footer.html';?>

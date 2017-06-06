@@ -12,7 +12,7 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
 
-<div class="overlay">KOLEKCJE</div>
+<div class="overlay">&nbspKOLEKCJE&nbsp</div>
 
 <div class="item active">
     <a href="collection.php?id=1">

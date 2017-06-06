@@ -11,9 +11,9 @@
 
 <?php include 'fragments/header.html';?>
 
-<div class="centerTextAlign"><h1>Regulamin zakupów na stronie IRON ALTAR</h1></div>
+<div class="centerTextAlign title">Regulamin zakupów na stronie IRON ALTAR</div>
 
-<div><h2>Regulamin określa zasady sprzedaży produktów oferowanych przez firmę ironaltar  założonej w 2015 roku z siedzibą przy ul.3 Maja 5 w Tuszynie. Firma posiada numer REGON: 361448347 oraz numer NIP 7282520026 <br>
+<div class="texts">Regulamin określa zasady sprzedaży produktów oferowanych przez firmę ironaltar  założonej w 2015 roku z siedzibą przy ul.3 Maja 5 w Tuszynie. Firma posiada numer REGON: 361448347 oraz numer NIP 7282520026 <br>
 <br>
 <strong>Postanowienia ogólne</strong><br>
 <br>
@@ -62,7 +62,7 @@ W przypadku błędu w cenie lub opisie, sklep zastrzega sobie możliwość anulo
     Wszystkie informacje, zdjęcia produktów, znaki firmowe producenta są chronione prawami autorskimi. Zabrania się ich kopiowania i rozpowszechniania, używania do celów handlowych lub prezentacji bez zgody właściciela.
     Wszystkie sprawy sporne strony będą się starały rozwiązać na drodze polubownej a w sytuacji, gdy porozumienie takie byłoby niemożliwe, spór rozstrzygać będzie sąd właściwy.
     Firma Iron Altar zastrzega sobie możliwość zmian w Regulaminie (nie w trakcie realizacji zamówienia) . Informacje o zmianach będą publikowane na stronie www.ironaltar.pl
-    Regulamin określa zasady zakupów w firmie ironaltar.pl.Złożenie zamówienia jest równoznaczne ze zgodą na wszystkie postanowienia i informacje zawarte w regulaminie.</h2></div>
+    Regulamin określa zasady zakupów w firmie ironaltar.pl.Złożenie zamówienia jest równoznaczne ze zgodą na wszystkie postanowienia i informacje zawarte w regulaminie.</div>
 <br><br><br>
 <?php include 'fragments/c2.php';?>
 <?php include 'fragments/footer.html';?>

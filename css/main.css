@@ -63,7 +63,7 @@
   border-color: white;
 }
 .productsTitle {
-  color: #BDBDBD;
+  color: #acadb1;
   font-weight: bold;
 }
 .footer {
@@ -76,10 +76,16 @@
   overflow: hidden;
   height: 150px;
   width: 33%;
+  text-align: left;
 }
-.textFont {
-  font-size: 18px;
-  font-weight: bold;
+.footerBox {
+  display: flex;
+}
+.footerBoxInner {
+  display: flex;
+  height: auto;
+  align-items: center;
+  justify-content: center;
 }
 .btn-circle {
   width: 30px;
@@ -89,6 +95,7 @@
   font-size: 12px;
   line-height: 1.428571429;
   border-radius: 15px;
+  background: #dcdde1;
 }
 .btn-circle.btn-lg {
   width: 50px;
@@ -97,6 +104,7 @@
   font-size: 18px;
   line-height: 1.33;
   border-radius: 25px;
+  background: #dcdde1;
 }
 .btn-circle.btn-xl {
   width: 100px;
@@ -105,25 +113,26 @@
   font-size: 34px;
   line-height: 1.33;
   border-radius: 50px;
-}
-.overlay {
-  color: #fff;
-  position: absolute;
-  z-index: 12;
-  top: 0;
-  left: 43%;
-  width: auto;
-  text-align: center;
-  background: #BDBDBD;
-  font-size: 28px;
-  font-family: 'robo', 'Arial Narrow';
-  font-weight: 900;
+  background: #dcdde1;
 }
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
   width: 100%;
   /* use this, or not */
   margin: auto;
+}
+.overlay {
+  color: #fff;
+  position: absolute;
+  z-index: 12;
+  top: 0;
+  left: 45%;
+  width: auto;
+  text-align: center;
+  background: #cbcfce;
+  font-size: 28px;
+  font-family: 'robo', 'Arial Narrow';
+  font-weight: 900;
 }
 .slick-track {
   display: flex;
@@ -170,12 +179,20 @@
 }
 .texts {
   font-size: 15px;
+  text-indent: 5%;
+}
+.textSide {
+  font-size: 18px;
+  font-weight: bold;
 }
 @media screen and (min-width: 767px) {
   #exampleModal .modal-dialog {
     width: 75%;
   }
 }
+/*
+@media (min-width: 767px){    }
+*/
 /* Large desktop 
 @media (min-width: 1200px) { ... }
 */
@@ -230,6 +247,7 @@
   }
   .overlay {
     font-size: 15px;
+    left: 44%;
   }
   .footerFont1 {
     font-size: 15px;
@@ -238,6 +256,7 @@
     overflow: hidden;
     height: 150px;
     width: 100%;
+    text-align: center;
   }
 }
 @media (max-width: 580px) {
@@ -254,7 +273,15 @@
     align-items: center;
     justify-content: center;
   }
+  .overlay {
+    font-size: 15px;
+    left: 43%;
+  }
 }
-/* Landscape phones and down 
-@media (max-width: 480px) { ... }
-*/
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .overlay {
+    font-size: 15px;
+    left: 40%;
+  }
+}

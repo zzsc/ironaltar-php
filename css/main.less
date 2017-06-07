@@ -1,7 +1,8 @@
 @mainWhite: white;
 @footerGrey: #f1f1f1;
-@thirdGray: #BDBDBD;
+@thirdGray: #cbcfce;
 @secondGrey: grey;
+@footerButtonGrey: #dcdde1;
 @margin40px: 40px;
 @margin10px: 10px;
 
@@ -12,68 +13,55 @@
          url('fonts/Roboto-Light.woff') format('woff'),
          url('fonts/Roboto-Light.ttf') format('truetype');
 }
-
 .container-fluid {
   max-width: 1180px; 
   font-family: 'robo','Arial Narrow';
 }
-
 .body{
     background: @mainWhite;
     margin-left: @margin10px;
     margin-right: @margin10px;
 }
-
 .centerTextAlign{
     text-align: center;
 }
-
 .centerDivsAlign{
     display: table;
   margin-right: auto;
   margin-left: auto;
 }
-
 .rightTextAlign{
     text-align: right;
 }
 .leftTextAlign{
     text-align: left;
 }
-
 .marginTop10{
     margin-top: @margin10px;
 }
-
 .marginBottom10{
     margin-bottom: @margin10px;
 }
-
 .marginTopBottom{
     margin-top: @margin40px;
     margin-bottom: @margin40px;
 }
-
 .marginSides{
     padding-left: @margin40px;
     padding-right: @margin40px;
 }
-
 .marginSlick{
     margin-left: @margin10px;
     margin-right: @margin10px;
 }
-
 .lineBackgroundColor{
     background-color: @footerGrey;
     height: 3px;
 }
-
 .lineTwoBackgroundColor{
     background-color: @secondGrey;
     height: 2px;
 }
-
 .navbar {
     margin-bottom: 0;
     font-size: 18px;
@@ -85,7 +73,7 @@
     border-color: @mainWhite;
 }
 .productsTitle{
-    color: @thirdGray;
+    color: #acadb1;
     font-weight: bold;
 }
 .footer{
@@ -98,10 +86,16 @@
      overflow: hidden;
      height: 150px;
      width: 33%;
+     text-align: left;
 }
-.textFont{
-    font-size: 18px;
-    font-weight: bold;
+.footerBox{
+ display: flex;
+}
+.footerBoxInner{
+        display: flex;
+        height: auto;
+        align-items: center; //optional
+        justify-content: center; //optional
 }
 
 //Cricle buttons on footer
@@ -113,6 +107,7 @@
   font-size: 12px;
   line-height: 1.428571429;
   border-radius: 15px;
+  background: @footerButtonGrey;
 }
 .btn-circle.btn-lg {
   width: 50px;
@@ -121,6 +116,7 @@
   font-size: 18px;
   line-height: 1.33;
   border-radius: 25px;
+  background: @footerButtonGrey;
 }
 .btn-circle.btn-xl {
   width: 100px;
@@ -129,23 +125,7 @@
   font-size: 34px;
   line-height: 1.33;
   border-radius: 50px;
-
-}
-
-//carousel top text static
-.overlay { 
-  color:#fff;
-  position:absolute;
-  z-index:12;
-  top:0;
-  left:43%;
-  width:auto;
-  text-align:center;
-  background: @thirdGray;
-  font-size: 28px;
-  font-family: 'robo','Arial Narrow';
-  font-weight: 900;
-
+  background: @footerButtonGrey;
 }
 
 //Carousel 
@@ -155,11 +135,24 @@ width: 100%; /* use this, or not */
 margin: auto;
 }
 
+//carousel top text static
+.overlay { 
+  color:#fff;
+  position:absolute;
+  z-index:12;
+  top:0;
+  left:45%;
+  width:auto;
+  text-align:center;
+  background: @thirdGray;
+  font-size: 28px;
+  font-family: 'robo','Arial Narrow';
+  font-weight: 900;
+}
 
 //Slick Carousel 
 .slick-track{
     display: flex;
-
     .slick-slide{
         display: flex;
         height: auto;
@@ -167,33 +160,29 @@ margin: auto;
         justify-content: center; //optional
     }
 }
-
 .slick-prev:before, .slick-next:before {
     font-family: "Glyphicons Halflings", "slick", sans-serif;
     font-size: 20px;
     color: @secondGrey;
 }
-
 .slick-prev:before { content: "\e257"; }
 .slick-next:before { content: "\e258"; }
 
-//produkty
+//product box c2 carousel
 .thumbnail{        
     width: 370px; 
     height: 560px;
     text-align: center;
     
 }
-
 .thumbnailImg{
     width: auto; 
     height: 480px;
     overflow: auto;
     display: flex;
-        align-items: center; //optional
-        justify-content: center; //optional
+    align-items: center; //optional
+    justify-content: center; //optional
 }
-
 .textProductThumbnail{
     position:absolute;  
     bottom:5;
@@ -201,34 +190,33 @@ margin: auto;
     right: 0;
 }
 
-//teksty
-
+//text on subpages
 .title{
 font-size: 25px;
 }
-
 .texts{
 font-size: 15px;
+text-indent: 5%;
+}
+.textSide{
+    font-size: 18px;
+    font-weight: bold;
 }
 
+
 //modal
-@media screen and (min-width: 767px) {
-	
+@media screen and (min-width: 767px) {	
 	#exampleModal .modal-dialog  {
         width:75%;
         }
-
 }
-
-@media (min-width: 767px){
-
-    }
-
+/*
+@media (min-width: 767px){    }
+*/
 
 /* Large desktop 
 @media (min-width: 1200px) { ... }
 */
-
 @media (min-width: 979px) { 
         .navbar-brand {
         display: none;
@@ -240,7 +228,6 @@ font-size: 15px;
         display: none;
         }
  }
-
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) { 
         .navbar-brand {
@@ -252,12 +239,10 @@ font-size: 15px;
     #logotypnologo{
         display: none;
         }
-
     .navbar {
     margin-bottom: 0;
     font-size: 13px;
-}
-
+    }
     .footerFont1{
     font-size: 15px;
     font-weight: bold;
@@ -265,19 +250,27 @@ font-size: 15px;
      overflow: hidden;
      height: 150px;
      width: 50%;
-}
-
+    }
+    
  }
-
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) { 
-
-    #banner { display: none; }
-    #numberDesktop {display: none; }
-    #logotyp { display: none; }
-    #doubleLine { display: none; }
-    .overlay { font-size: 15px; }
-
+    #banner { 
+        display: none; 
+        }
+    #numberDesktop {
+        display: none; 
+        }
+    #logotyp { 
+        display: none; 
+        }
+    #doubleLine { 
+        display: none; 
+        }
+    .overlay { 
+        font-size: 15px;
+        left:44%; 
+        }
     .footerFont1{
     font-size: 15px;
     font-weight: bold;
@@ -285,30 +278,33 @@ font-size: 15px;
      overflow: hidden;
      height: 150px;
      width: 100%;
-}
+     text-align: center;
+    }
  }
-
- @media (max-width: 580px) { 
-
-.thumbnail{        
-    width: 370px; 
-    height: 510px;
-    text-align: center;
-    
-}
-
-.thumbnailImg{
-    width: auto; 
-    height: 430px;
-    overflow: auto;
-    display: flex;
-        align-items: center; //optional
-        justify-content: center; //optional
-}
-
+    @media (max-width: 580px) { 
+    .thumbnail{        
+        width: 370px; 
+        height: 510px;
+        text-align: center;  
+    }
+    .thumbnailImg{
+        width: auto; 
+        height: 430px;
+        overflow: auto;
+        display: flex;
+            align-items: center; //optional
+            justify-content: center; //optional
+    }
+    .overlay { 
+        font-size: 15px;
+        left:43%; 
+        }
  }
-
-/* Landscape phones and down 
-@media (max-width: 480px) { ... }
-*/
+/* Landscape phones and down */
+@media (max-width: 480px) {  
+.overlay { 
+        font-size: 15px;
+        left:40%; 
+        }
+}
 

@@ -1,14 +1,14 @@
-<br><br>
+
 <div class="row">
         <div class="lineBackgroundColor">
         </div>
     </div>
 
 <div class="row">
-        <div class="col-xs-12 col-md-12 centerTextAlign productsTitle"><br><br><h1>PRODUKTY</h1><br></div>
+        <div class="col-xs-12 col-md-12 centerTextAlign productsTitle" id="scrollProduct"><br><br><h1>PRODUKTY</h1><br></div>
     </div>
 
-<div class="car marginTopBottom marginSlick" id="scrollProduct"> 
+<div class="car marginTopBottom marginSlick"> 
 
 <?php
   include 'php/connection.php';

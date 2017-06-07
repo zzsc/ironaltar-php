@@ -1,20 +1,15 @@
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="slick/slick.css" rel="stylesheet" type="text/css" />
-    <link href="slick/slick-theme.css" rel="stylesheet" type="text/css"/>
-    <link href="css/main.css" rel="stylesheet">
+<?php include 'fragments/head.html';?> 
 </head>
 <body>
-
+<?php include 'fragments/preloader.html';?>
 <?php include 'fragments/header.html';?>
 
 
 <div class="row footer jumbotron marginTopBottom"> 
  
-        <div class="col-xs-12 col-sm-4 col-md-4 textFont centerTextAlign">
+        <div class="col-xs-12 col-sm-4 col-md-4 textSide centerTextAlign">
             <button type="button" class="btn btn-default btn-circle btn-xl"><i class="glyphicon glyphicon-repeat"></i></button>
             Reklamacje i zwroty
             </div>
@@ -22,8 +17,9 @@
             
         <div class="col-xs-12 col-sm-8 col-md-8 ">
            <div class="centerTextAlign title">Proces postępowania przy uszkodzeniach towaru podczas transportu.</div>
-
-           <div class="texts">
+        <br>
+        <br>
+           <div class="texts" style="text-indent: 0%; " >
 a) Podczas odbioru towaru od kuriera przesyłka musi być każdorazowo sprawdzana przez osobę przyjmującą
 daną dostawę pod względem uszkodzeń mechanicznych. 
 Przesyłka powinna posiadać wszystkie zabezpieczenia i oznaczenia ostrzegawcze.
@@ -94,9 +90,6 @@ postępować według wskazań pracownika fimy przyjmującego zgłoszenie reklama
 <?php include 'fragments/footer.html';?>
 <?php include 'fragments/modal.html';?>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="slick/slick.min.js"></script>
-    <script src="js/slickconfig.js"></script>
+<?php include 'fragments/js.html';?>  
 </body>
 </html>

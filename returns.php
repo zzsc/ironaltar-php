@@ -86,7 +86,7 @@ postępować według wskazań pracownika fimy przyjmującego zgłoszenie reklama
 
 
 
-
+<?php include 'fragments/c2.php';?>
 <?php include 'fragments/footer.html';?>
 <?php include 'fragments/modal.html';?>
 

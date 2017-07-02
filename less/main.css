@@ -1,7 +1,25 @@
 @font-face {
   font-family: 'robo';
-  src: url('fonts/Roboto-Light.eot');
-  src: url('fonts/Roboto-Light.eot?#iefix') format('embedded-opentype'), url('fonts/Roboto-Light.woff') format('woff'), url('fonts/Roboto-Light.ttf') format('truetype');
+  src: url('fonts/RobotoLight.eot');
+  src: url('fonts/RobotoLight.eot') format('embedded-opentype'), url('fonts/RobotoLight.woff2') format('woff2'), url('fonts/RobotoLight.woff') format('woff'), url('fonts/RobotoLight.ttf') format('truetype'), url('fonts/RobotoLight.svg#RobotoLight') format('svg');
+}
+.title {
+  font-size: 25px;
+}
+.texts {
+  font-size: 15px;
+  text-indent: 5%;
+}
+.textSide {
+  font-size: 18px;
+  font-weight: bold;
+}
+.buttonTop {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  display: none;
+  z-index: 1000;
 }
 .container-fluid {
   max-width: 1180px;
@@ -62,12 +80,8 @@
   background-color: white;
   border-color: white;
 }
-.productsTitle {
-  color: #acadb1;
-  font-weight: bold;
-}
 .footer {
-  background-color: #f1f1f1;
+  background-color: #cbcfce;
 }
 .footerFont1 {
   font-size: 15px;
@@ -115,6 +129,9 @@
   border-radius: 50px;
   background: #dcdde1;
 }
+.social {
+  color: grey;
+}
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
   width: 100%;
@@ -133,6 +150,10 @@
   font-size: 28px;
   font-family: 'robo', 'Arial Narrow';
   font-weight: 900;
+}
+.productsTitle {
+  color: #acadb1;
+  font-weight: bold;
 }
 .slick-track {
   display: flex;
@@ -174,17 +195,6 @@
   left: 0;
   right: 0;
 }
-.title {
-  font-size: 25px;
-}
-.texts {
-  font-size: 15px;
-  text-indent: 5%;
-}
-.textSide {
-  font-size: 18px;
-  font-weight: bold;
-}
 @media screen and (min-width: 767px) {
   #exampleModal .modal-dialog {
     width: 75%;
@@ -204,6 +214,9 @@
     display: none;
   }
   #logotypnologo {
+    display: none;
+  }
+  #br {
     display: none;
   }
 }
@@ -229,6 +242,9 @@
     overflow: hidden;
     height: 150px;
     width: 50%;
+  }
+  #br {
+    display: none;
   }
 }
 /* Landscape phone to portrait tablet */

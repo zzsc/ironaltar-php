@@ -25,7 +25,7 @@
         </div>
 
 </div>
-
+<?php include 'fragments/c2.php';?>
 <?php include 'fragments/footer.html';?>
 <?php include 'fragments/modal.html';?>
 

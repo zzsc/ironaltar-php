@@ -5,7 +5,7 @@
     </div>
 
 <div class="row">
-        <div class="col-xs-12 col-md-12 centerTextAlign productsTitle" id="scrollProduct"><br><br><h1>PRODUKTY</h1><br></div>
+        <div class="col-xs-12 col-md-12 centerTextAlign productsTitle"><br><br><h1>PRODUKTY</h1><br></div>
     </div>
 
 <div class="car marginTopBottom marginSlick"> 

@@ -1,0 +1,79 @@
+@mainWhite: white;
+@footerGrey: #f1f1f1;
+@thirdGray: #cbcfce;
+@secondGrey: grey;
+@footerButtonGrey: #dcdde1;
+@margin40px: 40px;
+@margin10px: 10px;
+
+@import 'fonts.less';
+@import 'buttonTop.less';
+
+.container-fluid {
+  max-width: 1180px; 
+  font-family: 'robo','Arial Narrow';
+}
+.body{
+    background: @mainWhite;
+    margin-left: @margin10px;
+    margin-right: @margin10px;
+}
+.centerTextAlign{
+    text-align: center;
+}
+.centerDivsAlign{
+    display: table;
+  margin-right: auto;
+  margin-left: auto;
+}
+.rightTextAlign{
+    text-align: right;
+}
+.leftTextAlign{
+    text-align: left;
+}
+.marginTop10{
+    margin-top: @margin10px;
+}
+.marginBottom10{
+    margin-bottom: @margin10px;
+}
+.marginTopBottom{
+    margin-top: @margin40px;
+    margin-bottom: @margin40px;
+}
+.marginSides{
+    padding-left: @margin40px;
+    padding-right: @margin40px;
+}
+.marginSlick{
+    margin-left: @margin10px;
+    margin-right: @margin10px;
+}
+.lineBackgroundColor{
+    background-color: @footerGrey;
+    height: 3px;
+}
+.lineTwoBackgroundColor{
+    background-color: @secondGrey;
+    height: 2px;
+}
+.navbar {
+    margin-bottom: 0;
+    font-size: 18px;
+    white-space: nowrap;
+     overflow: hidden;
+}
+.navbar-default {
+    background-color: @mainWhite;
+    border-color: @mainWhite;
+}
+
+
+@import 'footer.less';
+
+@import 'c1.less';
+
+@import 'c2.less';
+@import 'mediaq.less';
+

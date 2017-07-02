@@ -1,51 +1,94 @@
 <div class="row footer jumbotron marginTopBottom centerTextAlign"> 
  
-        <a href="delivery.php"><div class="col-xs-12 col-sm-6 col-md-4 footerFont1 ">
-            <button type="button" class="btn btn-default btn-circle btn-xl"><img src="img/dostawa.png"></button>
-            DOSTAWA I TRANSPORT
-            </div></a>
-        <div class="col-xs-12 col-sm-6 col-md-4 footerFont1 ">
-            <button type="button" class="btn btn-default btn-circle btn-xl"><i class="glyphicon glyphicon-earphone"></i></button>
+            <div class="col-xs-12 col-sm-6 col-md-4 footerFont1 ">
+                <button type="button" class="btn btn-default btn-circle btn-xl" onclick="location.href='delivery.php'">
+                    <i class="fa fa-road fa-2x social" aria-hidden="true"></i>
+                    </button>
+                    <span id="br"><br></span>
+                DOSTAWA I TRANSPORT
+            </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-4 footerFont1">
+            <button type="button" class="btn btn-default btn-circle btn-xl" data-container="body"  
+            data-toggle="popover" 
+            title="Numer telefonu" 
+            data-content="881 203 904"
+            data-placement="bottom">
+                <i class="fa fa-phone fa-2x social" aria-hidden="true"></i>
+                </button>
+                <span id="br"><br></span>
             MASZ PYTANIA? ZADZWOŃ
-            </div>
+        </div>
+        
+
         <div class="col-xs-12 col-sm-6 col-md-4 footerFont1 ">
-            <button type="button" class="btn btn-default btn-circle btn-xl" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap"><i class="glyphicon glyphicon-envelope"></i></button>
+            <button type="button" class="btn btn-default btn-circle btn-xl" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">
+                <i class="fa fa-envelope fa-2x social" aria-hidden="true"></i>
+                </button>
+                <span id="br"><br></span>
             FORMULARZ KONTAKTOWY
-            </div>
-
-      <!--  <div class="col-xs-12 col-md-12 lineTwoBackgroundColor marginTopBottom">
-            </div> -->
-
-        <a href="returns.php"><div class="col-xs-12 col-sm-6 col-md-4 footerFont1 ">
-            <button type="button" class="btn btn-default btn-circle btn-xl"><img src="img/zwrot.png"></button>
-            REKLAMACJE I ZWROTY
-            </div></a>
-        <div class="col-xs-12 col-sm-6 col-md-4 footerFont1 ">
-            <a href="regulations.php"><button type="button" class="btn btn-default btn-circle btn-xl"><i class="glyphicon glyphicon-list-alt"></i></button></a>
-            REGUALMIN
-            </div>
-        <div class="col-xs-12 col-sm-6 col-md-4 footerFont1 ">
-            <button type="button" class="btn btn-default btn-circle btn-xl"><img src="img/zwrot.png"></button>
-            KONTAKT Z NAMI
-            </div>
-
-        <div class="col-xs-12 col-sm-12 col-md-12">
-         <div class="col-xs-2 col-sm-3 col-md-3"></div>
-         <div class="col-xs-2 col-sm-3 col-md-3"></div>
-         <div class="col-xs-2 col-sm-3 col-md-3"></div>
-         <div class="col-xs-6 col-sm-3 col-md-3 leftTextAlign">
-                <br>
-                IRON ALTAR<br><br>
-                Tuszyn ul. 3-go.Maja 5<br><br>
-                tel. 881 203 904<br><br>
-                mail ironaltar@op.pl
-         </div>
         </div>
 
+      <!--<div class="col-xs-12 col-md-12 lineTwoBackgroundColor marginTopBottom">
+            </div> -->
+            <div class="col-xs-12 col-sm-6 col-md-4 footerFont1 ">
+                <button type="button" class="btn btn-default btn-circle btn-xl" onclick="location.href='returns.php'">
+                    <i class="fa fa-repeat fa-2x social" aria-hidden="true"></i>
+                    </button>
+                    <span id="br"><br></span>
+                REKLAMACJE I ZWROTY
+            </div>
 
+            <div class="col-xs-12 col-sm-6 col-md-4 footerFont1 ">
+            <button type="button" class="btn btn-default btn-circle btn-xl" onclick="location.href='regulations.php'">
+                <i class="fa fa-book fa-2x social" aria-hidden="true"></i>
+                </button>
+                <span id="br"><br></span>
+            REGUALMIN
+        </div>
+ 
+        <div class="col-xs-12 col-sm-6 col-md-4 footerFont1 ">
+            <button type="button" class="btn btn-default btn-circle btn-xl" 
+            data-toggle="popover" 
+            data-container="body" 
+            title="Dane Teleadresowe" 
+            data-content="
+                            IRON ALTAR
+                            Tuszyn ul. 3-go.Maja 5
+                            tel. 881 203 904
+                            mail <a href='mailto: ironaltar@op.pl'>ironaltar@op.pl</a>"
+            data-html="true"
+            data-placement="bottom" >
+                <i class="fa fa-address-book fa-2x social" aria-hidden="true"></i>
+                </button>
+                <span id="br"><br></span>
+            KONTAKT Z NAMI
+        </div>
 
+<!--
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="col-xs-2 col-sm-3 col-md-3"></div>
+            <div class="col-xs-2 col-sm-3 col-md-3"></div>
+            <div class="col-xs-2 col-sm-3 col-md-3"></div>
+            <div class="col-xs-6 col-sm-3 col-md-3 leftTextAlign">
+                    <br>
+                    IRON ALTAR<br><br>
+                    Tuszyn ul. 3-go.Maja 5<br><br>
+                    tel. 881 203 904<br><br>
+                    mail ironaltar@op.pl
+            </div>
+        </div>
+-->
+
+        <div class="leftTextAlign">
+        <i class="fa fa-facebook-official fa-2x social" aria-hidden="true"></i>
+        <i class="fa fa-twitter fa-2x social" aria-hidden="true"></i>
+        <i class="fa fa-pinterest fa-2x social" aria-hidden="true"></i>
+        <i class="fa fa-youtube-square fa-2x social" aria-hidden="true"></i>
+        <i class="fa fa-instagram fa-2x social" aria-hidden="true"></i>
+        <i class="fa fa-google-plus-official fa-2x social" aria-hidden="true"></i>
+        </div>
 </div> 
-
 <div class="col-xs-6 col-sm-6 col-md-6 leftTextAlign">
     <strong>&copy;</strong> 2017 Iron Altar
 </div>

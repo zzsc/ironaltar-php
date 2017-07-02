@@ -9,7 +9,6 @@
 <?php include 'fragments/c2.php';?>
 <?php include 'fragments/footer.html';?>
 <?php include 'fragments/modal.html';?>
-
 <?php include 'fragments/js.html';?>  
 </body>
 </html>

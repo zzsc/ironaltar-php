@@ -1,0 +1,44 @@
+.productsTitle{
+    color: #acadb1;
+    font-weight: bold;
+}
+
+//Slick Carousel 
+.slick-track{
+    display: flex;
+    .slick-slide{
+        display: flex;
+        height: auto;
+        align-items: center; //optional
+        justify-content: center; //optional
+    }
+}
+.slick-prev:before, .slick-next:before {
+    font-family: "Glyphicons Halflings", "slick", sans-serif;
+    font-size: 20px;
+    color: @secondGrey;
+}
+.slick-prev:before { content: "\e257"; }
+.slick-next:before { content: "\e258"; }
+
+//product box c2 carousel
+.thumbnail{        
+    width: 370px; 
+    height: 560px;
+    text-align: center;
+    
+}
+.thumbnailImg{
+    width: auto; 
+    height: 480px;
+    overflow: auto;
+    display: flex;
+    align-items: center; //optional
+    justify-content: center; //optional
+}
+.textProductThumbnail{
+    position:absolute;  
+    bottom:5;
+    left: 0;
+    right: 0;
+}

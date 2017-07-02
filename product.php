@@ -13,8 +13,7 @@
 
 <?php include 'fragments/js.html';?>  
     <script>
-        $(function() { // when the DOM is ready...
-            //  Move the window's scrollTop to the offset position of #now
+        $(function() {
             $(window).scrollTop($('#scrollProduct').offset().top);
         });
     </script>

@@ -1,0 +1,16 @@
+#Reading-progress {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 5px;
+  margin: 0px;
+  left: 0px;
+  z-index: 99;
+}
+.bar {
+  height: 5px;
+  background: dodgerblue;
+  position: fixed;
+  top: 0px;
+  z-index: 99;
+}

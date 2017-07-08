@@ -10,7 +10,8 @@
                 $dirname = "img/collections/$id/";
                 $images = glob($dirname."*.*");
                     foreach($images as $image) {
-                        echo '<img src="'.$image.'" class="img-thumbnail" /><br />';
+                        echo '<a class="example-image-link" href="'.$image.'" data-lightbox="example-set" data-title="Click">
+                        <img src="'.$image.'" class="img-thumbnail" /></a><br />';
                     }
             ?>
         </div>

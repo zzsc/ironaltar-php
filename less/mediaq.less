@@ -25,6 +25,7 @@
     #br { 
         display: none; 
         }
+        
  }
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) { 
@@ -39,10 +40,10 @@
         }
     .navbar {
     margin-bottom: 0;
-    font-size: 13px;
+    font-size: 11px;
     }
     .footerFont1{
-    font-size: 15px;
+    font-size: 11px;
     font-weight: bold;
     white-space: nowrap;
      overflow: hidden;
@@ -56,55 +57,76 @@
  }
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) { 
-    #banner { 
-        display: none; 
-        }
-    #numberDesktop {
-        display: none; 
-        }
-    #logotyp { 
-        display: none; 
-        }
-    #doubleLine { 
-        display: none; 
-        }
-    .overlay { 
-        font-size: 15px;
-        left:44%; 
-        }
-    .footerFont1{
-    font-size: 15px;
-    font-weight: bold;
-    white-space: nowrap;
-     overflow: hidden;
-     height: 150px;
-     width: 100%;
-     text-align: center;
-    }
+                #banner { 
+                    display: none; 
+                    }
+                #numberDesktop {
+                    display: none; 
+                    }
+                #logotyp { 
+                    display: none; 
+                    }
+                #doubleLine { 
+                    display: none; 
+                    }
+                .overlay { 
+                    font-size: 15px;
+                    left:44%; 
+                    }
+                .footerFont1{
+                font-size: 11px;
+                font-weight: bold;
+                white-space: nowrap;
+                overflow: hidden;
+                height: 150px;
+                width: 100%;
+                text-align: center;
+                }
+                .productsTitle{
+                    font-size: 15px;
+                }
  }
-    @media (max-width: 580px) { 
-    .thumbnail{        
-        width: 370px; 
-        height: 510px;
-        text-align: center;  
-    }
-    .thumbnailImg{
-        width: auto; 
-        height: 430px;
-        overflow: auto;
-        display: flex;
-            align-items: center; //optional
-            justify-content: center; //optional
-    }
-    .overlay { 
-        font-size: 15px;
-        left:43%; 
-        }
+    
+@media (max-width: 580px) { 
+                .thumbnail{        
+                    width: 370px; 
+                    height: 510px;
+                    text-align: center;  
+                }
+                .thumbnailImg{
+                    width: auto; 
+                    height: 430px;
+                    overflow: auto;
+                    display: flex;
+                        align-items: center; //optional
+                        justify-content: center; //optional
+                }
+                .overlay { 
+                    font-size: 15px;
+                    left:43%; 
+                    }
  }
+
 /* Landscape phones and down */
 @media (max-width: 480px) {  
-.overlay { 
-        font-size: 15px;
-        left:40%; 
-        }
+                    .overlay { 
+                            font-size: 15px;
+                            left:40%; 
+                            }
+}
+
+@media (max-width: 300px) {  
+                    .thumbnail{        
+                    width: 370px; 
+                    height: 410px;
+                    text-align: center;  
+                }
+                .thumbnailImg{
+                    width: auto; 
+                    height: 330px;
+                    overflow: auto;
+                    display: flex;
+                        align-items: center; //optional
+                        justify-content: center; //optional
+                }
 }

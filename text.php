@@ -9,12 +9,13 @@
 <?php
                 $col = $_GET['col'];
                 include 'php/connection.php';
-                mysql_query('SET NAMES utf8');
+                mysqli_set_charset($link, "utf8");
                 $strSQL = "SELECT * FROM texts";
-	            $rs = mysql_query($strSQL);
-	            while($row = mysql_fetch_array($rs)) {
+	            $rs = mysqli_query($link, $strSQL);
+	            while($row = mysqli_fetch_array($rs)) {
                     echo $row[$col];
                 }
+                mysqli_close($link);
 ?>
 
 <?php include 'fragments/c2.php';?>

@@ -36,6 +36,9 @@
 .marginTop10{
     margin-top: @margin10px;
 }
+.marginTop40{
+    margin-top: @margin40px;
+}
 .marginBottom10{
     margin-bottom: @margin10px;
 }
@@ -43,9 +46,17 @@
     margin-top: @margin40px;
     margin-bottom: @margin40px;
 }
+.marginTopBottom10{
+    margin-top: @margin10px;
+    margin-bottom: @margin10px;
+}
 .marginSides{
     padding-left: @margin40px;
     padding-right: @margin40px;
+}
+.marginSides10{
+    padding-left: @margin10px;
+    padding-right: @margin10px;
 }
 .marginSlick{
     margin-left: @margin10px;
@@ -70,11 +81,13 @@
     border-color: @mainWhite;
 }
 
-
 @import 'footer.less';
-
 @import 'c1.less';
-
 @import 'c2.less';
 @import 'mediaq.less';
+@import 'blueFrameRemove.less';
 
+.img-thumbnail{
+    border-color: @footerGrey;
+    // background: @footerGrey;
+}

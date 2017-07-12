@@ -16,29 +16,27 @@
 <div class="overlay">&nbspKOLEKCJE&nbsp</div>
 
 <div class="item active">
-    <a href="collection.php?id=1">
-            <img src="img/collections/1/a.jpg" />
-                
+    <a href="collection.php?collection_name=Komplet PERSEUS">
+            <img src="img/collections/Komplet PERSEUS/b.jpg" />
                     </a>
                 </div>
 
 <?php
       include 'php/connection.php';
-      $strSQL = "SELECT * FROM collection WHERE NOT id='1'";
-	  $rs = mysql_query($strSQL);
-	  while($row = mysql_fetch_array($rs)) {
+      $strSQL = "SELECT * FROM collection WHERE NOT collection_name='Komplet PERSEUS'";
+	  $rs = mysqli_query($link,$strSQL);
+	  while($row = mysqli_fetch_array($rs)) {
     
         echo '
 
             <div class="item">
-            <a href="collection.php?id='.$row['id'].'">
-                    <img src="img/collections/'.$row['id'].'/a.jpg" />
-                        
+            <a href="collection.php?collection_name='.$row['collection_name'].'">
+                    <img src="img/collections/'.$row['collection_name'].'/b.jpg" />
                             </a>
                         </div>
         ';
     }
-    	mysql_close();
+    	mysqli_close($link);
 ?>
 
         </div>

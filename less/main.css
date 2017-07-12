@@ -14,6 +14,10 @@
   font-size: 18px;
   font-weight: bold;
 }
+.productsTitles {
+  font-size: 34px;
+  text-align: center;
+}
 .buttonTop {
   position: fixed;
   bottom: 10px;
@@ -48,6 +52,9 @@
 .marginTop10 {
   margin-top: 10px;
 }
+.marginTop40 {
+  margin-top: 40px;
+}
 .marginBottom10 {
   margin-bottom: 10px;
 }
@@ -55,9 +62,17 @@
   margin-top: 40px;
   margin-bottom: 40px;
 }
+.marginTopBottom10 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 .marginSides {
   padding-left: 40px;
   padding-right: 40px;
+}
+.marginSides10 {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .marginSlick {
   margin-left: 10px;
@@ -346,4 +361,17 @@ ul {
     align-items: center;
     justify-content: center;
   }
+}
+textarea:focus,
+input:focus {
+  outline: 0;
+}
+.btn:active,
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus {
+  outline: 0 none !important;
+}
+.img-thumbnail {
+  border-color: #f1f1f1;
 }

@@ -1,5 +1,5 @@
 
-<div class="row marginTopBottom">
+<div class="row marginTop10">
     
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Indicators 
@@ -13,31 +13,31 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
 
-<div class="overlay">&nbspKOLEKCJE&nbsp</div>
+        <div class="overlay">&nbspKOLEKCJE&nbsp</div>
 
-<div class="item active">
-    <a href="collection.php?collection_name=Komplet PERSEUS">
-            <img src="img/collections/Komplet PERSEUS/b.jpg" />
-                    </a>
+                <div class="item active">
+                    <a href="collection.php?collection_name=Komplet PERSEUS">
+                            <img src="img/collections/Komplet PERSEUS/thumb/1.jpg" />
+                                    </a>
                 </div>
 
-<?php
-      include 'php/connection.php';
-      $strSQL = "SELECT * FROM collection WHERE NOT collection_name='Komplet PERSEUS'";
-	  $rs = mysqli_query($link,$strSQL);
-	  while($row = mysqli_fetch_array($rs)) {
-    
-        echo '
+                                <?php
+                                    include 'php/connection.php';
+                                    $strSQL = "SELECT * FROM collection WHERE NOT collection_name='Komplet PERSEUS'";
+                                    $rs = mysqli_query($link,$strSQL);
+                                    while($row = mysqli_fetch_array($rs)) {
+                                    
+                                        echo '
 
-            <div class="item">
-            <a href="collection.php?collection_name='.$row['collection_name'].'">
-                    <img src="img/collections/'.$row['collection_name'].'/b.jpg" />
-                            </a>
-                        </div>
-        ';
-    }
-    	mysqli_close($link);
-?>
+                                            <div class="item">
+                                            <a href="collection.php?collection_name='.$row['collection_name'].'">
+                                                    <img src="img/collections/'.$row['collection_name'].'/thumb/1.jpg" />
+                                                            </a>
+                                                        </div>
+                                        ';
+                                    }
+                                        mysqli_close($link);
+                                ?>
 
         </div>
         <!-- Left and right controls -->
@@ -49,5 +49,5 @@
                     <span class="glyphicon glyphicon-chevron-right"></span>
                     <span class="sr-only">Next</span>
                 </a>
-    </div>                       
+         </div>                       
 </div>

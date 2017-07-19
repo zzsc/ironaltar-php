@@ -6,10 +6,20 @@
                     <h4 class="modal-title" id="exampleModalLabel">Nowa wiadomość</h4>
                 </div>
                 <div class="modal-body">
-                    <form data-toggle="validator" role="form" action="php/mail_handler.php" method="post">
+                    <form data-toggle="validator" class="contact-form" id="contactForm" role="form" name="my-form" method="POST">
+                    <div class="form-group">
+                        <label for="inputName" class="control-label">Imię i Nazwisko</label>
+                        <input type="required" class="form-control" id="inputName" name="inputName" placeholder="Imię" data-error="Wpisz imię lub nazwisko" required>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputNumber" class="control-label">Numer telefonu</label>
+                        <input type="text" class="form-control input-medium bfh-phone" id="inputNumber" name="inputNumber" placeholder="Numer telefonu" data-error="Nieprawidłowy numer telefonu" data-format="ddd-ddd-ddd">
+                        <div class="help-block with-errors"></div>
+                    </div>
                     <div class="form-group">
                         <label for="inputEmail" class="control-label">Email</label>
-                        <input type="email" class="form-control" id="inputEmail" name="inputEmail" placeholder="Email" data-error="Nieprawidłowy adres email" required>
+                        <input type="email" class="form-control" id="inputEmail" name="inputEmail" placeholder="Adres email" data-error="Nieprawidłowy adres email">
                         <div class="help-block with-errors"></div>
                     </div>
                     <div class="form-group">
@@ -18,10 +28,12 @@
                         <div class="help-block with-errors"></div>
                     </div>
                     <div class="form-group modal-footer">
-                        <button type="submit" class="btn btn-primary" name="submit" value="Submit">Wyślij wiadomość</button>
+                        <div id="info1"></div>
+                        <button type="submit" id="submit" class="btn btn-primary" name="submit" value="Submit">Wyślij wiadomość</button>
                         <button type="button" class="btn btn-default" data-dismiss="modal">Zamknij</button>
                     </div>
                     </form>
+                    <div id="info"></div>
                 </div>
             </div>
     </div>

@@ -8,14 +8,13 @@
 }
 .texts {
   font-size: 15px;
-  text-indent: 5%;
 }
 .textSide {
   font-size: 18px;
   font-weight: bold;
 }
 .productsTitles {
-  font-size: 34px;
+  font-size: 28px;
   text-align: center;
 }
 .buttonTop {
@@ -28,12 +27,12 @@
 .container-fluid {
   max-width: 1180px;
   font-family: 'robo', Fallback, sans-serif;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .body {
   font-family: 'robo', Fallback, sans-serif;
   background: white;
-  margin-left: 10px;
-  margin-right: 10px;
 }
 .centerTextAlign {
   text-align: center;
@@ -57,6 +56,9 @@
 }
 .marginBottom10 {
   margin-bottom: 10px;
+}
+.marginBottom40 {
+  margin-bottom: 40px;
 }
 .marginTopBottom {
   margin-top: 40px;
@@ -100,7 +102,7 @@
   background-color: #cbcfce;
 }
 .footerFont1 {
-  font-size: 11px;
+  font-size: 15px;
   font-weight: bold;
   white-space: nowrap;
   overflow: hidden;
@@ -196,7 +198,7 @@ ul {
 .productsTitle {
   color: #acadb1;
   font-weight: bold;
-  font-size: 34px;
+  font-size: 28px;
 }
 .slick-track {
   display: flex;
@@ -234,9 +236,15 @@ ul {
 }
 .textProductThumbnail {
   position: absolute;
-  bottom: 5;
+  bottom: 15;
   left: 0;
   right: 0;
+}
+.textProductThumbnail1 {
+  font-size: 20px;
+}
+.textProductThumbnail2 {
+  font-size: 20px;
 }
 @media screen and (min-width: 767px) {
   #exampleModal .modal-dialog {
@@ -256,11 +264,19 @@ ul {
   #numberMobile {
     display: none;
   }
-  #logotypnologo {
-    display: none;
-  }
   #br {
     display: none;
+  }
+  .middleVerticalAlign {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
   }
 }
 /* Portrait tablet to landscape and desktop */
@@ -269,9 +285,6 @@ ul {
     display: none;
   }
   #numberMobile {
-    display: none;
-  }
-  #logotypnologo {
     display: none;
   }
   .navbar {
@@ -289,6 +302,17 @@ ul {
   #br {
     display: none;
   }
+  .middleVerticalAlign {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
 }
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
@@ -296,9 +320,6 @@ ul {
     display: none;
   }
   #numberDesktop {
-    display: none;
-  }
-  #logotyp {
     display: none;
   }
   #doubleLine {
@@ -323,17 +344,29 @@ ul {
 }
 @media (max-width: 580px) {
   .thumbnail {
-    width: 370px;
-    height: 510px;
+    width: 270px;
+    height: 310px;
     text-align: center;
   }
   .thumbnailImg {
     width: auto;
-    height: 430px;
+    height: 280px;
     overflow: auto;
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .textProductThumbnail {
+    position: absolute;
+    bottom: 18;
+    left: 0;
+    right: 0;
+  }
+  .textProductThumbnail1 {
+    font-size: 10px;
+  }
+  .textProductThumbnail2 {
+    font-size: 10px;
   }
   .overlay {
     font-size: 15px;
@@ -349,17 +382,29 @@ ul {
 }
 @media (max-width: 300px) {
   .thumbnail {
-    width: 370px;
-    height: 410px;
+    width: 170px;
+    height: 110px;
     text-align: center;
   }
   .thumbnailImg {
     width: auto;
-    height: 330px;
+    height: 90px;
     overflow: auto;
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .textProductThumbnail {
+    position: absolute;
+    bottom: 13;
+    left: 0;
+    right: 0;
+  }
+  .textProductThumbnail1 {
+    font-size: 5px;
+  }
+  .textProductThumbnail2 {
+    font-size: 5px;
   }
 }
 textarea:focus,
@@ -374,4 +419,8 @@ input:focus {
 }
 .img-thumbnail {
   border-color: #f1f1f1;
+}
+.mainImageSize {
+  height: 60%;
+  width: auto;
 }

@@ -19,13 +19,23 @@
     #numberMobile{
         display: none;
         }
-    #logotypnologo{
-        display: none;
-        }
+   // #logotypnologo{
+    //   display: none;
+     //   }
     #br { 
         display: none; 
         }
-        
+       .middleVerticalAlign{
+display: -webkit-box;
+display: -webkit-flex;
+display: -moz-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-flex-align: center;
+-ms-flex-align: center;
+-webkit-align-items: center;
+align-items: center;
+} 
  }
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) { 
@@ -35,9 +45,9 @@
     #numberMobile{
         display: none;
         }
-    #logotypnologo{
-        display: none;
-        }
+    //#logotypnologo{
+    //    display: none;
+    //    }
     .navbar {
     margin-bottom: 0;
     font-size: 11px;
@@ -53,7 +63,17 @@
     #br { 
         display: none; 
         }
-    
+    .middleVerticalAlign{
+display: -webkit-box;
+display: -webkit-flex;
+display: -moz-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-flex-align: center;
+-ms-flex-align: center;
+-webkit-align-items: center;
+align-items: center;
+}
  }
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) { 
@@ -63,9 +83,9 @@
                 #numberDesktop {
                     display: none; 
                     }
-                #logotyp { 
-                    display: none; 
-                    }
+               // #logotyp { 
+                //    display: none; 
+                 //   }
                 #doubleLine { 
                     display: none; 
                     }
@@ -89,18 +109,30 @@
     
 @media (max-width: 580px) { 
                 .thumbnail{        
-                    width: 370px; 
-                    height: 510px;
+                    width: 270px; 
+                    height: 310px;
                     text-align: center;  
                 }
                 .thumbnailImg{
                     width: auto; 
-                    height: 430px;
+                    height: 280px;
                     overflow: auto;
                     display: flex;
                         align-items: center; //optional
                         justify-content: center; //optional
                 }
+                .textProductThumbnail{
+                    position:absolute;  
+                    bottom:18;
+                    left: 0;
+                    right: 0;
+                    }
+                .textProductThumbnail1{
+                        font-size: 10px;
+                    }
+                .textProductThumbnail2{
+                        font-size: 10px;
+                    }
                 .overlay { 
                     font-size: 15px;
                     left:43%; 
@@ -117,16 +149,28 @@
 
 @media (max-width: 300px) {  
                     .thumbnail{        
-                    width: 370px; 
-                    height: 410px;
+                    width: 170px; 
+                    height: 110px;
                     text-align: center;  
-                }
-                .thumbnailImg{
-                    width: auto; 
-                    height: 330px;
-                    overflow: auto;
-                    display: flex;
-                        align-items: center; //optional
-                        justify-content: center; //optional
-                }
+                    }
+                    .thumbnailImg{
+                        width: auto; 
+                        height: 90px;
+                        overflow: auto;
+                        display: flex;
+                            align-items: center; //optional
+                            justify-content: center; //optional
+                    }
+                    .textProductThumbnail{
+                    position:absolute;  
+                    bottom:13;
+                    left: 0;
+                    right: 0;
+                    }
+                    .textProductThumbnail1{
+                        font-size: 5px;
+                    }
+                    .textProductThumbnail2{
+                        font-size: 5px;
+                    }
 }

@@ -114,6 +114,10 @@
   margin-left: 10px;
   margin-right: 10px;
 }
+.greyLineMargin {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 .lineBackgroundColor {
   background-color: #f1f1f1;
   height: 3px;

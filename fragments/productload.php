@@ -7,16 +7,19 @@
 <br>
 
 <div class="row">
+
+<!--
         <div class="col-xs-12 col-md-12 col-md-12 centerTextAlign">
-            <?php
-                $id = $_GET['product_name'];
-                $image = "img/products/$id/main/main.jpg";    
-                        echo '<a class="example-image-link" href="'.$image.'" data-lightbox="example-set" data-title="Click">
-                        <img src="'.$image.'" class="img-thumbnail mainImageSize" /></a><br />';
+   //         <?php
+             //   $id = $_GET['product_name'];
+             //   $image = "img/products/$id/main/main.jpg";    
+              //          echo '<a class="example-image-link" href="'.$image.'" data-lightbox="example-set" data-title="Click">
+             //           <img src="'.$image.'" class="img-thumbnail mainImageSize" /></a><br />';
             ?>
             <br>
             <br>
         </div>
+-->
         <div class="col-xs-12 col-md-4 col-md-4">
             <?php
                 $id = $_GET['product_name'];
@@ -40,6 +43,7 @@
          echo '
          <div class="col-xs-12 col-md-8 col-md-8">
                 <h2>'.$row['product_name'].'</h2><br>
+                <a href="collection.php?collection_name=Komplet%20'.$row['product_collection'].'"><h4>Komplet '.$row['product_collection'].'</h4><br></a>
                 <h5>'.$row['product_desc'].'</h5><br>
                 <h4>Wykonanie</h4>
                 <h5>'.$row['product_made'].'</h5><br><br>

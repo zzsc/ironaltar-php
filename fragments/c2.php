@@ -1,5 +1,6 @@
-<div class="row">
-        <div class="col-xs-12 col-md-12 centerTextAlign productsTitle" id="scrollProductButton"><br>PRODUKTY<br></div>
+<div class="row marginTop40 marginBottom40">
+        <div class="col-xs-5 col-sm-5 col-md-5"></div>
+        <div class="col-xs-7 col-sm-7 col-md-7 leftTextAlign productsTitle" id="scrollProductButton">PRODUKTY</div>
     </div>
 
 <div class="car marginTopBottom10 marginSlick"> 

@@ -13,7 +13,7 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
 
-        <div class="overlay">&nbspKOLEKCJE&nbsp</div>
+        <div class="col-xs-7 col-sm-7 col-md-7 overlay rightTextAlign">KOLEKCJE</div><div class="col-xs-5 col-sm-5 col-md-5"></div>
 
                 <div class="item active">
                     <a href="collection.php?collection_name=Komplet PERSEUS">

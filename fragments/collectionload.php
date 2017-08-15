@@ -4,16 +4,20 @@
 </div><br>
 
 <div class="row">
+
+<!--
         <div class="col-xs-12 col-md-12 col-md-12 centerTextAlign">
-            <?php
-                $id = $_GET['collection_name'];
-                $image = "img/collections/$id/main/main.jpg";    
-                        echo '<a class="example-image-link" href="'.$image.'" data-lightbox="example-set" data-title="Click">
-                        <img src="'.$image.'" class="img-thumbnail mainImageSize" /></a><br />';
-            ?>
+   //         <?php
+               // $id = $_GET['collection_name'];
+              //  $image = "img/collections/$id/main/main.jpg";    
+               //         echo '<a class="example-image-link" href="'.$image.'" data-lightbox="example-set" data-title="Click">
+               //         <img src="'.$image.'" class="img-thumbnail mainImageSize" /></a><br />';
+     //       ?>
             <br>
             <br>
         </div>
+-->
+
         <div class="col-xs-12 col-md-4 col-md-4">
             <?php
                 $id = $_GET['collection_name'];

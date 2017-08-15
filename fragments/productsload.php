@@ -1,4 +1,4 @@
-<div class="leftTextAlign productsTitle marginTop40">PRODUKTY</div>
+<div class="leftTextAlign productsTitleProducts marginTop40">PRODUKTY</div>
 
 <div class="row">
         <div class="lineBackgroundColor">

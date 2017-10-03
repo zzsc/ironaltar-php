@@ -1,8 +1,8 @@
 
 <?php 
 if($_POST){
-    $to = "poczta@etronik.pl"; // this is your Email address poczta@etronik.pl
-    $from = $_POST['email']; // this is the sender's Email address
+    $to = "poczta@etronik.pl"; 
+    $from = $_POST['email']; /
     $subject = "Zapytanie z WWW";
     $subject2 = "Potwierdzenie wysłania zapytania do IRON ALTAR";
 
@@ -24,9 +24,6 @@ if($_POST){
    'X-Mailer: PHP/' . phpversion();
 
     mail($to,$subject,$message,$headers);
-    mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
-
-    // You can also use header('Location: thank_you.php'); to redirect to another page.
-    // You cannot use header and echo together. It's one or the other.
+    mail($from,$subject2,$message2,$headers2); 
     }
 ?>
